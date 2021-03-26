@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+	::before
+	<div class="container">
+	<header class="header">
+		<h1 id="title" class="center">eSports Survey Form</h1>
+		<p id="description" class="center desc"> It's not child's play</p>
+	</header>
+	<form id="survey-form">
+		<div class="formgrp">
+			<label id="name-label" for="name">Name</label>
+			<input type="text" name="name" id="name" class="form-control" placeholder="Enter your name" required="">
+		</div>
+
+		<div class="formgrp">
+			<label id="email-label" for="email">Email</label>
+			<input type="email" name="email" id="email" class="form-control" placeholder="Enter your Email" required="">
+		</div>
+
+		<div class="formgrp">
+			<label id="number-label" for="name">Age</label>
+			<input type="number" name="age" id="number" class="form-control" min="10" max="65" placeholder="Age" required="">
+		</div>
+
+		<div class="formgrp">
+			<p>What is your current occupation?</p>
+			<select id="dropdown" name="occupation" class="form-control" required="">
+				<option disabled selected value>Select current occupation</option>
+				<option value="student">Student</option>
+				<option value="employee">Employee</option>
+				<option value="unemployed">Unemployed</option>
+				<option value="free">Freelancer</option>
+				<option value="PreferNo">Prefer not to disclose</option>
+				<option value="other">Other</option>
+			</select>
+		</div >
+
+		<div class="formgrp">
+			<p>Are you interested in eSports?</p>
+			
+			<label>
+				<input type="radio" name="opt" value="yes" class= "input-radio" checked="">
+				Yes
+			</label>
+
+			<label>
+				<input type="radio" name="opt" class= "input-radio" value="slightly">
+				Slightly
+			</label>
+
+			<label>
+				<input type="radio" name="opt" class= "input-radio" value="neutral">
+				Neutral
+			</label>
+
+			<label>
+				<input type="radio" name="opt" class= "input-radio" value="not really">
+				Not really
+			</label>
+
+			<label>
+				<input type="radio" name="opt" class= "input-radio" value="no">
+				No
+			</label>
+		</div>
+
+		<div class="formgrp">
+			<p>What type of gamer are you?</p>
+			<select id="dropdown" name="drop" class="form-control" required="">
+        <option disabled="" selected="" value="">Select an option</option>
+        <option value="competitive">Competitive gamer</option>
+        <option value="backseat">Backseat gamer</option>
+        <option value="gambler">The Gambler</option>
+        <option value="old">Old-school gamer</option>
+        <option value="gambler">The Gambler</option>
+        <option value="destructive">Destructive gamer</option>
+        <option value="trophy">The Trophy Hunter</option>
+        <option value="puzzle">Puzzle gamer</option>
+        <option value="social">Social gamer</option>
+        <option value="hardcore">Hardcore gamer</option>
+        <option value="casual">Casual gamer</option>
+      </select>
+		</div>
+
+		<div class="formgrp">
+			<p>What eSports role interests you? (Check all that apply)</p>
+			<label>
+				<input type="checkbox" name="pro" class="input-checkbox" value="Pro">
+				Pro player
+			</label>
+
+			<label>
+				<input type="checkbox" name="caster" class="input-checkbox" value="Caster">
+				Shoutcaster a.k.a. Caster/Host
+			</label>
+			
+			<label>
+				<input type="checkbox" name="analyst" class="input-checkbox" value="Analyst">
+				Analyst/Coach
+			</label>
+
+			<label>
+				<input type="checkbox" name="manager" class="input-checkbox" value="Manager">
+				Team Manager/Owner
+			</label>
+
+			<label>
+				<input type="checkbox" name="admin" class="input-checkbox" value="Admin">
+				Tournament admin
+			</label>
+
+			<label>
+				<input type="checkbox" name="creator" class="input-checkbox" value="Creator">
+				Content creator/Journalist
+			</label>
+
+			<label>
+				<input type="checkbox" name="marketing" class="input-checkbox" value="Marketing">
+				Marketing/PR
+			</label>
+
+			<label>
+				<input type="checkbox" name="social" class="input-checkbox" value="Social">
+				Community/Social media manager
+			</label>
+
+			<label>
+				<input type="checkbox" name="sales" class="input-checkbox" value="Sales">
+				Sales/Partnerships Manager
+			</label>
+
+			<label>
+				<input type="checkbox" name="agent" class="input-checkbox" value="Agent">
+				Agent
+			</label>
+
+			<label>
+				<input type="checkbox" name="event" class="input-checkbox" value="Event">
+				Event Manager
+			</label>
+
+			<label>
+				<input type="checkbox" name="production" class="input-checkbox" value="Production">
+				Production/Broadcasting
+			</label>
+
+			<label>
+				<input type="checkbox" name="legal" class="input-checkbox" value="Legal">
+				Legal/Finance
+			</label>
+		</div>
+
+		<div class="formgrp">
+			<p>Any opinions, comments or suggestions?</p>
+
+			<textarea id="comments" name="comment" class="textarea" placeholder="Enter comments here..."></textarea>
+		</div>
+
+		<div class="formgrp">
+			<button type="submit" id="submit" class="submit"> Submit</button>
+		</div>
+	</form>
+ </div>
+</body>
+</html>
